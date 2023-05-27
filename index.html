@@ -5,40 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PetShop</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css"
+      integrity="sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
-      <ul>
-        <li>Grandes oferta en comederos</li>
-        <li>
-          Menu regional
-          <ul>
-            <li>Español</li>
-            <li>$ARG</li>
-          </ul>
-        </li>
-      </ul>
-      <nav>
-        <ul>
-          <img src="img/Logo.png" alt="logo petshop" />
-          <li>
-            Menú principal
-            <ul>
-              <li>Categorías</li>
-              <li>Pets</li>
-              <li>Nosotros</li>
-              <li>Contactanos</li>
-            </ul>
-          </li>
+      <section class="header-container-top">
+        <p>Grandes ofertas en comederos</p>
+        <ul class="header-lista">
+          <li>Español</li>
+          <li>$ARG</li>
         </ul>
-      </nav>
+      </section>
+      <section class="header-container-bottom">
+        <p class="logo-base">
+          <img src="img/Cat.png" alt="gato" />
+          <span class="logo-first">Front</span>
+          Cat&Dog
+          <img src="img/Dog.png" alt="perro" />
+        </p>
+        <nav>
+          <ul class="nav-links">
+            <li>
+              <img src="img/pawprint 1.png" alt="" /><span>Categorías</span>
+            </li>
+            <li><img src="img/pawprint 1.png" alt="" /><span>Pets</span></li>
+            <li>
+              <img src="img/pawprint 1.png" alt="" /><span>Nosotros</span>
+            </li>
+            <li>
+              <img src="img/pawprint 1.png" alt="" /><span>Contactanos</span>
+            </li>
+          </ul>
+        </nav>
+      </section>
     </header>
     <main>
-      <section>
-        <img
+      <section class="main-container-top">
+        <!-- <img
           src="img/bowl-and-pet-daities-on-green-background 1.png"
           alt="fondo plato para mascota"
-        />
+        /> -->
         <p>Es un placer tenerlos aquí!</p>
         <p>Comederos en descuento!</p>
         <p>COMEDEROS</p>
@@ -59,13 +72,23 @@
       </section>
     </main>
     <footer>
-      <ul>
-        <li><img src="img/location.png" alt="" /> Locatidad</li>
-        <li><img src="img/Phone.png" alt="" /> Teléfono</li>
-        <li><img src="img/email.png" alt="" /> Correo Electrónico</li>
-      </ul>
-      <img src="img/Logo.png" alt="logo petshop" />
-      <p>Todos los derechos reservados Front End</p>
+      <section class="footer-container-top">
+        <p><i class="fa-solid fa-location-dot fa-2xl"></i> Localidad</p>
+        <p><i class="fa-solid fa-phone-volume fa-2xl"></i> Teléfono</p>
+        <p>
+          <i class="fa-solid fa-envelope-circle-check fa-2xl"></i> Correo
+          Electrónico
+        </p>
+        <p class="logo-base">
+          <img src="img/Cat.png" alt="gato" />
+          <span class="logo-first">Front</span>
+          Cat&Dog
+          <img src="img/Dog.png" alt="perro" />
+        </p>
+      </section>
+      <section class="footer-container-bottom">
+        <p>Todos los derechos reservados Front End</p>
+      </section>
     </footer>
   </body>
 </html>
