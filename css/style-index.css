@@ -14,17 +14,24 @@
   background-color: #222222;
   color: #f3f3f3;
   font-weight: 400;
+  display: flex;
+  justify-content: space-between;
 }
 
 .header-lista {
   list-style: none;
+  display: flex;
 }
 
 .header-container-bottom {
   background-color: #f0a83e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo-base {
+  margin: 30px;
   font-size: 20px;
   font-weight: 700;
   line-height: 23.44px;
@@ -41,11 +48,16 @@
   color: #ffffff;
   font-weight: 400;
   font-size: 13px;
+  display: flex;
+  justify-content: end;
+}
+.nav-links li {
+  margin: 27px 10px;
 }
 
 /* ------------    Estilos main   ------------ */
 .main-container-top {
-  height: 50vh;
+  height: 70vh;
   width: 100%;
   background-image: url("../img/bowl-and-pet-daities-on-green-background 1.png");
   background-repeat: no-repeat;
@@ -87,12 +99,58 @@
   color: #ffffff;
 }
 
+.main-container-productos {
+  margin: 50px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  color: #3c2313;
+}
+
+.main-container-links {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #666666;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card-item {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.card-description {
+  color: #3c2313;
+}
+
+.card-price {
+  color: #f0a83e;
+}
+
 /* ------------   Estilos footer  ------------ */
 .footer-container-top {
   background-color: #3c2313;
   color: #f3f3f3;
   height: 284px;
-  justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-end {
+  color: #ffffff;
+}
+
+.logo-end2 {
+  color: #f0a83e;
 }
 
 .footer-contact-item {
@@ -103,8 +161,16 @@
   line-height: 23.44px;
 }
 
+.footer-contact-subtitle {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  color: #8a8787;
+}
+
 .footer-container-bottom {
   background-color: #222222;
+  text-align: center;
   color: #f3f3f3;
   font-size: 10px;
   height: 20px;

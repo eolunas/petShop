@@ -18,10 +18,12 @@
     <header>
       <section class="header-container-top">
         <p>Grandes ofertas en comederos</p>
-        <ul class="header-lista">
-          <li>Español</li>
-          <li>$ARG</li>
-        </ul>
+        <span>
+          <ul class="header-lista">
+            <li>Español</li>
+            <li>$ARG</li>
+          </ul>
+        </span>
       </section>
       <section class="header-container-bottom">
         <p class="logo-base">
@@ -53,39 +55,51 @@
           <p>¡Comederos en descuento!</p>
           <p>COMEDEROS</p>
         </span>
-        
       </section>
-      <section>
+      <section class="main-container-productos">
         <img src="img/pawprint_big.png" alt="patita de perrito" />
         <p>Productos Destacados</p>
-        <p>Comederos - Accesorios - Comida</p>
-        <img src="img/churrasquito.png" alt="juguete churrasquito" />
-        <p>Juguete Churrasquito</p>
-        <p>$150</p>
-        <img src="img/comedero.png" alt="comedero para mascota" />
-        <p>Juguete Churrasquito</p>
-        <p>$150</p>
-        <img src="img/Huesito.png" alt="huesito de goma" />
-        <p>Juguete Churrasquito</p>
-        <p>$150</p>
+        <p class="main-container-links">Comederos - Accesorios - Comida</p>
+        <article class="cards-container">
+          <div class="card-item">
+            <img src="img/churrasquito.png" alt="juguete churrasquito" />
+            <p class="card-description">Juguete Churrasquito</p>
+            <p class="card-price">$150</p>
+          </div>
+          <div class="card-item">
+            <img src="img/comedero.png" alt="comedero para mascota" />
+            <p class="card-description">Juguete Churrasquito</p>
+            <p class="card-price">$150</p>
+          </div>
+          <div class="card-item">
+            <img src="img/Huesito.png" alt="huesito de goma" />
+            <p class="card-description">Juguete Churrasquito</p>
+            <p class="card-price">$150</p>
+          </div>
+        </article>
       </section>
     </main>
     <footer>
       <section class="footer-container-top">
-        <p class="footer-contact-item">
-          <i class="fa-solid fa-location-dot fa-2xl"></i> Localidad
-        </p>
-        <p class="footer-contact-item">
-          <i class="fa-solid fa-phone-volume fa-2xl"></i> Teléfono
-        </p>
-        <p class="footer-contact-item">
-          <i class="fa-solid fa-envelope-circle-check fa-2xl"></i> Correo
-          Electrónico
-        </p>
+        <div>
+          <p class="footer-contact-item">
+            <i class="fa-solid fa-location-dot fa-2xl"></i> Localidad
+            <span class="footer-contact-subtitle">Calle - provincia</span>
+          </p>
+          <p class="footer-contact-item">
+            <i class="fa-solid fa-phone-volume fa-2xl"></i> Teléfono
+            <span class="footer-contact-subtitle">Número de telefono</span>
+          </p>
+          <p class="footer-contact-item">
+            <i class="fa-solid fa-envelope-circle-check fa-2xl"></i> Correo
+            Electrónico
+            <span class="footer-contact-subtitle">Dirección de correo</span>
+          </p>
+        </div>
         <p class="logo-base">
           <img src="img/Cat.png" alt="gato" />
-          <span class="logo-first">Front</span>
-          Cat&Dog
+          <span class="logo-end">Front</span>
+          <span class="logo-end2">Cat&Dog</span>
           <img src="img/Dog.png" alt="perro" />
         </p>
       </section>
