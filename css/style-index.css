@@ -1,5 +1,7 @@
+/* ------------   Importación     ------------ */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
 
+/* ------------ Estilos generales ------------ */
 * {
   font-family: Roboto, sans-serif;
   margin: 0;
@@ -7,6 +9,7 @@
   box-sizing: border-box;
 }
 
+/* ------------  Estilos header   ------------ */
 .header-container-top {
   background-color: #222222;
   color: #f3f3f3;
@@ -32,6 +35,7 @@
   color: #3c2313;
 }
 
+/* ------------  Estilos nav menu ------------ */
 .nav-links {
   list-style: none;
   color: #ffffff;
@@ -39,8 +43,8 @@
   font-size: 13px;
 }
 
-
-.main-container-top{
+/* ------------    Estilos main   ------------ */
+.main-container-top {
   height: 50vh;
   width: 100%;
   background-image: url("../img/bowl-and-pet-daities-on-green-background 1.png");
@@ -48,6 +52,42 @@
   background-size: cover;
 }
 
+.welcome-message {
+  position: absolute;
+  right: 60px;
+  top: 237px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.welcome-message :nth-child(1) {
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 30px;
+  line-height: 35px;
+  margin-top: 10px;
+}
+
+.welcome-message :nth-child(2) {
+  font-size: 16px;
+  line-height: 19px;
+  color: #3c2313;
+  margin-top: 10px;
+}
+
+.welcome-message :nth-child(3) {
+  background: #f0a83e;
+  border-radius: 5px;
+  padding: 15px 23px;
+  margin: 10px 30%;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+/* ------------   Estilos footer  ------------ */
 .footer-container-top {
   background-color: #3c2313;
   color: #f3f3f3;
@@ -56,8 +96,11 @@
 }
 
 .footer-contact-item {
-
   padding: 30px;
+  color: #f3f3f3;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23.44px;
 }
 
 .footer-container-bottom {
@@ -65,5 +108,4 @@
   color: #f3f3f3;
   font-size: 10px;
   height: 20px;
-  align-items: center;
 }
