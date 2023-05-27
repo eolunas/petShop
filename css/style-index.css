@@ -52,6 +52,12 @@
   background-color: #3c2313;
   color: #f3f3f3;
   height: 284px;
+  justify-content: center;
+}
+
+.footer-contact-item {
+
+  padding: 30px;
 }
 
 .footer-container-bottom {
