@@ -9,18 +9,33 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+  min-width: 40rem;
+}
+
 /* ------------  Estilos header   ------------ */
 .header-container-top {
   background-color: #222222;
   color: #f3f3f3;
   font-weight: 400;
+  font-size: 1.6rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.header-container-top p{
+  margin: 0.8rem 0 0.8rem 9rem;
 }
 
 .header-lista {
   list-style: none;
   display: flex;
+  margin-right: 5rem;
+}
+
+.header-lista li {
+  margin-right: 2rem;
 }
 
 .header-container-bottom {
@@ -28,14 +43,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem;
 }
 
 .logo-base {
-  margin: 30px;
-  font-size: 20px;
+  margin: 3rem;
+  font-size: 3rem;
   font-weight: 700;
-  line-height: 23.44px;
   color: #ffffff;
+}
+
+.logo-base img{
+  width: 2.5rem;
 }
 
 .logo-first {
@@ -47,85 +66,95 @@
   list-style: none;
   color: #ffffff;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 2rem;
   display: flex;
   justify-content: end;
+  margin-right: 5rem;
 }
 .nav-links li {
   margin: 27px 10px;
 }
 
+.nav-links li img{
+  width: 2rem;
+  margin-right: 0.3rem;
+}
+
 /* ------------    Estilos main   ------------ */
 .main-container-top {
   height: 70vh;
-  width: 100%;
   background-image: url("../img/bowl-and-pet-daities-on-green-background 1.png");
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .welcome-message {
-  position: absolute;
-  right: 60px;
-  top: 237px;
   text-align: center;
   font-style: normal;
   font-weight: 400;
+  margin-right: 3rem;
 }
 
 .welcome-message :nth-child(1) {
   background: #ffffff;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 30px;
-  line-height: 35px;
-  margin-top: 10px;
+  border-radius: 0.8rem;
+  padding: 2rem;
+  font-size: 5rem;
 }
 
 .welcome-message :nth-child(2) {
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 2.5rem;
   color: #3c2313;
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 .welcome-message :nth-child(3) {
   background: #f0a83e;
-  border-radius: 5px;
-  padding: 15px 23px;
-  margin: 10px 30%;
-  font-size: 16px;
+  border-radius: 0.8rem;
+  padding: 2rem 2.3rem;
+  margin: 1.5rem 30%;
+  font-size: 2.5rem;
   line-height: 19px;
   color: #ffffff;
 }
 
 .main-container-productos {
-  margin: 50px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem;
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 47px;
+  font-size: 5rem;
   color: #3c2313;
+}
+
+.main-container-productos img{
+  width: 15rem;
 }
 
 .main-container-links {
   font-weight: 400;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 2rem;
   color: #666666;
 }
 
 .cards-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
-
+.card-item img {
+  width: 30rem;
+}
 .card-item {
   font-weight: 500;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 2rem;
+  margin: 2rem;
 }
+
 
 .card-description {
   color: #3c2313;
