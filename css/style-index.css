@@ -107,8 +107,7 @@ nav div {
   background: #ffffff;
   border-radius: 0.8rem;
   padding: 2rem;
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 2.5rem;
 }
 
 .welcome-message :nth-child(2) {
@@ -198,18 +197,41 @@ p.card-description {
   color: #f0a83e;
 }
 
-.footer-contact-item {
-  padding: 30px;
-  color: #f3f3f3;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23.44px;
+.footer-contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.footer-contact-subtitle {
+.footer-contact-item {
+  padding: 1rem 3rem;
+  color: #f3f3f3;
   font-weight: 700;
-  font-size: 10px;
-  line-height: 12px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer-contact-icon {
+  width: 7rem;
+  height: 7rem;
+  background-color: #8a8787;
+  border-radius: 50%;
+  border: 5px solid #786960;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-contact-item p {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.footer-contact-item p :nth-child(2) {
+  font-weight: 700;
+  font-size: 1rem;
   color: #8a8787;
 }
 

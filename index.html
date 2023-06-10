@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, maximum-scale=1, user-scalable=0"
+    />
     <title>PetShop</title>
     <link rel="stylesheet" href="css/style-index.css" />
     <link
@@ -45,7 +48,9 @@
               <img src="img/pawprint 1.png" alt="" /><span>Contactanos</span>
             </li>
           </ul>
-          <div class="toggle-visible"><i class="fa-solid fa-burger fa-2xl"></i></div>
+          <div class="toggle-visible">
+            <i class="fa-solid fa-burger fa-2xl"></i>
+          </div>
         </nav>
       </section>
     </header>
@@ -82,21 +87,35 @@
     </main>
     <footer>
       <section class="footer-container-top">
-        <div>
-          <p class="footer-contact-item">
-            <i class="fa-solid fa-location-dot fa-2xl"></i> Localidad
-            <span class="footer-contact-subtitle">Calle - provincia</span>
-          </p>
-          <p class="footer-contact-item">
-            <i class="fa-solid fa-phone-volume fa-2xl"></i> Teléfono
-            <span class="footer-contact-subtitle">Número de telefono</span>
-          </p>
-          <p class="footer-contact-item">
-            <i class="fa-solid fa-envelope-circle-check fa-2xl"></i> Correo
-            Electrónico
-            <span class="footer-contact-subtitle">Dirección de correo</span>
-          </p>
-        </div>
+        <article class="footer-contact-container">
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <i class="fa-solid fa-location-dot fa-2xl"></i>
+            </div>
+            <p>
+              <span>Localidad</span>
+              <span>Calle - provincia</span>
+            </p>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <i class="fa-solid fa-phone-volume fa-2xl"></i>
+            </div>
+            <p>
+              <span>Telefono</span>
+              <span>Número de telefono</span>
+            </p>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <i class="fa-solid fa-envelope-circle-check fa-2xl"></i>
+            </div>
+            <p>
+              <span>Correo Electrónico</span>
+              <span>Dirección de correo</span>
+            </p>
+          </div>
+        </article>
         <p class="logo-base">
           <img src="img/Cat.png" alt="gato" />
           <span class="logo-end">Front</span>
