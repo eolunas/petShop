@@ -19,23 +19,21 @@ html {
   background-color: #222222;
   color: #f3f3f3;
   font-weight: 400;
-  font-size: 1.6rem;
-  display: flex;
+  font-size: 1.2rem;
+  display: none;
   justify-content: space-between;
   align-items: center;
 }
-.header-container-top p{
-  margin: 0.8rem 0 0.8rem 9rem;
+.header-container-top p {
+  margin: 0.8rem 0 0.8rem 3rem;
 }
-
 .header-lista {
   list-style: none;
   display: flex;
-  margin-right: 5rem;
+  margin-right: 1rem;
 }
-
 .header-lista li {
-  margin-right: 2rem;
+  margin-right: 1.3rem;
 }
 
 .header-container-bottom {
@@ -47,14 +45,14 @@ html {
 }
 
 .logo-base {
-  margin: 3rem;
-  font-size: 3rem;
+  margin: 1.3rem 0 1.3rem 1rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: #ffffff;
 }
 
-.logo-base img{
-  width: 2.5rem;
+.logo-base img {
+  width: 1.3rem;
 }
 
 .logo-first {
@@ -66,20 +64,25 @@ html {
   list-style: none;
   color: #ffffff;
   font-weight: 400;
-  font-size: 2rem;
-  display: flex;
+  font-size: 1.3rem;
+  display: none;
   justify-content: end;
-  margin-right: 5rem;
+  margin-right: 0.5rem;
 }
 .nav-links li {
-  margin: 27px 10px;
+  margin: 1.6rem 0.5rem;
 }
-
-.nav-links li img{
+.nav-links li img {
   width: 2rem;
-  margin-right: 0.3rem;
+  margin-right: 0.1rem;
 }
-
+nav div {
+  color: #ffffff;
+  margin-right: 1rem;
+}
+.toggle-visible {
+  display: flex;
+}
 /* ------------    Estilos main   ------------ */
 .main-container-top {
   height: 70vh;
@@ -87,7 +90,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
 
@@ -95,18 +98,21 @@ html {
   text-align: center;
   font-style: normal;
   font-weight: 400;
-  margin-right: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .welcome-message :nth-child(1) {
   background: #ffffff;
   border-radius: 0.8rem;
   padding: 2rem;
-  font-size: 5rem;
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .welcome-message :nth-child(2) {
-  font-size: 2.5rem;
+  font-size: 1.6rem;
   color: #3c2313;
   margin-top: 1rem;
 }
@@ -115,8 +121,8 @@ html {
   background: #f0a83e;
   border-radius: 0.8rem;
   padding: 2rem 2.3rem;
-  margin: 1.5rem 30%;
-  font-size: 2.5rem;
+  margin: 1.5rem 0;
+  font-size: 1.6rem;
   line-height: 19px;
   color: #ffffff;
 }
@@ -132,8 +138,14 @@ html {
   color: #3c2313;
 }
 
-.main-container-productos img{
-  width: 15rem;
+.main-container-productos img {
+  width: 12rem;
+  margin-bottom: 1rem;
+}
+
+.main-container-productos p {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .main-container-links {
@@ -144,20 +156,22 @@ html {
 
 .cards-container {
   display: flex;
-  justify-content: space-between;
-}
-.card-item img {
-  width: 30rem;
+  flex-direction: column;
+  align-items: center;
 }
 .card-item {
   font-weight: 500;
   font-size: 2rem;
   margin: 2rem;
+  background-color: #fbfaf5;
 }
-
-
-.card-description {
+.card-item img {
+  width: 30rem;
+}
+p.card-description {
   color: #3c2313;
+  font-weight: bold;
+  margin: 0;
 }
 
 .card-price {
@@ -168,12 +182,14 @@ html {
 .footer-container-top {
   background-color: #3c2313;
   color: #f3f3f3;
-  height: 284px;
   display: flex;
+  flex-direction: column-reverse;
   align-items: center;
   justify-content: space-between;
 }
-
+.footer-container-top .logo-base {
+  margin: 1rem 3rem;
+}
 .logo-end {
   color: #ffffff;
 }
@@ -203,4 +219,37 @@ html {
   color: #f3f3f3;
   font-size: 10px;
   height: 20px;
+}
+
+/* ------------   Media Queries ------------ */
+/* Tablet */
+@media screen and (min-width: 460px) {
+  .header-container-top {
+    display: flex;
+  }
+  .nav-links {
+    display: flex;
+  }
+  .main-container-top {
+    justify-content: flex-end;
+  }
+  .welcome-message {
+    margin-right: 3rem;
+    align-items: center;
+  }
+  .welcome-message :nth-child(3) {
+    margin: 1.5rem 30%;
+  }
+  .cards-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .toggle-visible {
+    display: none;
+  }
+
+  .footer-container-top {
+    flex-direction: row;
+  }
 }
